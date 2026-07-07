@@ -19,8 +19,8 @@ public class DoctorsMapper {
         return new DoctorsResponse(
                 doctor.getId(),
                 doctor.getFullName(),
-                doctor.getEmail(),
                 doctor.getSpecialization(),
+                doctor.getEmail(),
                 doctor.getPhoneNumber(),
                 doctor.getCreatedAt()
         );

@@ -44,7 +44,6 @@ public class DoctorServiceImpl implements DoctorsService{
         found.setEmail(doctor.getEmail());
         found.setSpecialization(doctor.getSpecialization());
         found.setPhoneNumber(doctor.getPhoneNumber());
-
         doctorRepository.save(found);
         return doctorsMapper.toDto(found);
     }
